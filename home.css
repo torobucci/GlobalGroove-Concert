@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 10px 20px;
+}
+
+#top-section {
+  background: url('./images/intro.png');
+}
+
+.fa-bars {
+  font-size: 40px;
+}
+
+.intro-content,
+.main-program {
+  margin: 24px 18px;
+  margin-bottom: 0;
+}
+
+.intro-p {
+  font-family: 'Lato', sans-serif;
+  color: #ec5242;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.intro-h1 {
+  font-family: 'Lato', sans-serif;
+  font-family: 'cocogoose', sans-serif;
+  color: #ec5242;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description {
+  border: 1px solid #fff;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+}
+
+.event-date {
+  font-family: 'cocogoose', sans-serif;
+  color: rgb(46, 44, 44);
+  font-size: 26px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.event-location {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: rgb(146, 146, 146);
+}
+
+#main-program {
+  background-color: #272a31;
+}
+
+.main-program {
+  padding: 20px 0;
+}
+
+.main-program-title h2 {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.divider {
+  text-align: center;
+  width: 15%;
+  height: 2px;
+  background: #ec5242;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.program {
+  display: flex;
+  background: #4e5158;
+  column-gap: 5%;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.program i {
+  color: #d3d3d3;
+  font-size: 40px;
+}
+
+.program-title {
+  color: #df402e;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+}
+
+.program-description {
+  color: #d3d3d3;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+}
+
+.join {
+  margin: 0 15% 20px;
+  width: 70%;
+  border: none;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  background-color: #ec5242;
+  color: #d3d3d3;
+}
