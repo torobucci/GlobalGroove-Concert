@@ -269,6 +269,14 @@ footer {
   .menu-toggle {
     display: none;
   }
+
+  .program-title {
+    font-size: 18px;
+  }
+
+  .program-description {
+    font-size: 13px;
+  }
 }
 
 .menu-toggle {
