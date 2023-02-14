@@ -10,10 +10,42 @@
     <script src="https://kit.fontawesome.com/198fcc7e17.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="body">
     <section id="top-section">
         <header>
-            <i class="fa-solid fa-bars"></i>
+            <div class="bars-container">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="top-nav">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">My page</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+                <div class="bottom-nav-container">
+                    <li id="logo"><a href="home.html"><img src="./images/GG logo.png" alt="Global Groove logo"
+                                width="70px"></a></li>
+                    <ul class="bottom-nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#partners">sponsor</a></li>
+                        <li><a id="campaign" href="#footer">GG concert</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-x"></i>
+                <ul class="toggle-nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#main-program">Program</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#partners">sponsor</a></li>
+                    <li><a href="#footer">GG concert</a></li>
+                </ul>
+            </div>
         </header>
         <section id="introduction">
             <div class="intro-content">
@@ -39,7 +71,7 @@
     <section id="gg-logo">
         <div class="logo-container">
             <h2 class="logo-intro">Global Groove concert logo</h2>
-            <hr class="divider" />
+            <hr class="divider"/>
             <p class="about-logo">
                 The logo was designed by Kevin Toro, graphic designer in 2001 when the
                 organization was founded.
@@ -54,8 +86,10 @@
                     Take a look at Global Groove concerts that took place in New York
                     and in Texas
                 </p>
-                <img src="./images/ny.jpg" alt="New York concert" />
-                <img src="./images/texas.jpg" alt="Texas concert" />
+                <div class="past-images">
+                    <img src="./images/ny.jpg" alt="New York concert" width="60%"/>
+                   <img src="./images/texas.jpg" alt="Texas concert" width="60%"/>
+                </div>
             </div>
         </div>
     </section>
@@ -75,13 +109,14 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <img src="./images/GG logo.png" alt="Global groove logo" width="100px">
       <div class="footer-details">
         <p>2023 Global Groove concerts</p>
         <p>&copy; All rights served</p>
       </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -4,10 +4,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-header {
-  padding: 10px 20px;
+html {
+  scroll-behavior: smooth;
 }
 
 p,
@@ -20,14 +21,88 @@ strong {
   text-decoration: underline;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #df402e;
+}
+
+a:active {
+  color: green;
+}
+
 #top-section {
   background: url('./images/intro.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.bars-container {
+  display: block;
+}
+
 .fa-bars {
   font-size: 40px;
+  margin: 30px 25px 0;
+  cursor: pointer;
+}
+
+.top-nav,
+.bottom-nav {
+  display: none;
+}
+
+.top-nav {
+  padding-right: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: flex-end;
+  column-gap: 15px;
+  background-color: #272a31;
+  color: #fff;
+}
+
+.fa-brands {
+  font-size: 60px;
+  color: #d3d3d3;
+}
+
+.fa-facebook,
+.fa-twitter {
+  font-size: 20px;
+}
+
+.bottom-nav-container {
+  display: none;
+  background-color: #fff;
+  justify-content: space-between;
+  padding-right: 20%;
+  padding-left: 12%;
+}
+
+.bottom-nav {
+  align-items: center;
+  column-gap: 40px;
+}
+
+.bottom-nav a {
+  color: #272a31;
+}
+
+.bottom-nav a:hover {
+  color: #df402e;
+}
+
+#campaign {
+  border: 3px solid #df402e;
+  padding: 0.5rem;
 }
 
 .intro-content {
@@ -35,34 +110,33 @@ strong {
 }
 
 .intro-p {
-  font-family: 'Lato', sans-serif;
   color: #ec5242;
   font-size: 30px;
   font-weight: 100;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .intro-h1 {
-  font-family: 'Lato', sans-serif;
   font-family: 'cocogoose', sans-serif;
   color: #ec5242;
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .description {
   background-color: #fff;
   border: 1px solid #d3d3d3;
   padding: 20px;
-  font-family: 'Lato', sans-serif;
   font-size: 17px;
   text-align: center;
 }
 
 .contact-us {
   padding: 20px;
-  font-family: 'Lato', sans-serif;
   font-size: 17px;
   text-align: center;
 }
@@ -74,15 +148,13 @@ strong {
 .logo-container,
 .past-concerts {
   margin: 24px 18px;
-  padding: 24px 0;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 15px;
   text-align: center;
 }
 
 .logo-intro {
-  font-family: 'Lato', sans-serif;
   font-weight: 200;
   font-weight: bolder;
   font-size: 27px;
@@ -97,7 +169,6 @@ strong {
 }
 
 .about-logo {
-  font-family: 'Lato', sans-serif;
   font-size: 17px;
 }
 
@@ -108,7 +179,6 @@ strong {
 }
 
 .past-intro {
-  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 22px;
 }
@@ -130,7 +200,6 @@ strong {
 }
 
 .partners-title h2 {
-  font-family: 'Lato', sans-serif;
   color: #fff;
   text-align: center;
   margin-bottom: 15px;
@@ -143,15 +212,8 @@ strong {
   justify-content: center;
 }
 
-.fa-brands {
-  display: block;
-  font-size: 60px;
-  color: #d3d3d3;
-}
-
 .brand-span {
   font-size: 15px;
-  font-family: 'Lato', sans-serif;
   vertical-align: super;
   margin-left: 5px;
 }
@@ -161,6 +223,89 @@ footer {
   column-gap: 40px;
   justify-content: center;
   align-items: center;
-  font-family: 'Lato', sans-serif;
   padding: 10px 30px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .bars-container {
+    display: none;
+  }
+
+  .top-nav,
+  .bottom-nav,
+  .bottom-nav-container {
+    display: flex;
+  }
+
+  .intro-content,
+  .logo-container {
+    margin: 5% auto 0;
+    max-width: 60%;
+  }
+
+  .intro-p {
+    display: none;
+  }
+
+  .past-images {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  #partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+    color: #d3d3d3;
+    padding: 30px 0;
+  }
+
+  footer img {
+    border-radius: 50%;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #272a31;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 1.5s;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.max {
+  height: 100vh;
+}
+
+.fa-x {
+  color: #fff;
+  float: right;
+  margin: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.toggle-nav {
+  font-size: 40px;
+  padding: 80px 40px;
+}
+
+.toggle-nav li {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4e5158;
 }

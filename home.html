@@ -10,10 +10,42 @@
     <script src="https://kit.fontawesome.com/198fcc7e17.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="body">
     <section id="top-section">
         <header>
-            <i class="fa-solid fa-bars"></i>
+            <div class="bars-container">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="top-nav">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">My page</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+                <div class="bottom-nav-container">
+                    <li id="logo"><a href="home.html"><img src="./images/GG logo.png" alt="Global Groove logo"
+                                width="70px"></a></li>
+                    <ul class="bottom-nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#main-program">Program</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#partners">sponsor</a></li>
+                        <li><a id="campaign" href="#footer">GG concert</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-x"></i>
+                <ul class="toggle-nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#main-program">Program</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#partners">sponsor</a></li>
+                    <li><a href="#footer">GG concert</a></li>
+                </ul>
+            </div>
         </header>
         <section id="introduction">
             <div class="intro-content">
@@ -35,101 +67,138 @@
                 <h2>Main Program</h2>
                 <hr class="divider">
             </div>
-            <div class="program">
-                <i class="fa-solid fa-person-chalkboard"></i>
-                <h3 class="program-title">Intro speech by MC</h3>
-                <p class="program-description">Trevoh Noah gives introduction on the program to the audience</p>
+            <div class="programs-container">
+                <div class="program">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h3 class="program-title">Intro speech by MC</h3>
+                    <p class="program-description">Trevoh Noah gives introduction on the program to the audience</p>
+                </div>
+                <div class="program">
+                    <i class="fa-solid fa-drum"></i>
+                    <h3 class="program-title">Swahili Love</h3>
+                    <p class="program-description">We will begin the event with a good presentation of swahili songs</p>
+                </div>
+                <div class="program">
+                    <i class="fa-solid fa-guitar"></i>
+                    <h3 class="program-title">Pop music</h3>
+                    <p class="program-description">The term "pop music" is short for "popular music" and refers to music
+                        that is widely appealing and has mass commercial appeal.</p>
+                </div>
+                <div class="program">
+                    <i class="fa-brands fa-soundcloud"></i>
+                    <h3 class="program-title">Rap</h3>
+                    <p class="program-description">Rap music is known for its dynamic rhythms, catchy hooks, and witty,
+                        insightful lyrics.</p>
+                </div>
+                <div class="program">
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <h3 class="program-title">Afro music</h3>
+                    <p class="program-description">Musical styles and genres that originate from the African continent,
+                        or
+                        are influenced by African musical traditions</p>
+                </div>
+                <div class="program">
+                    <i class="fa-solid fa-cannabis"></i>
+                    <h3 class="program-title">Reggae</h3>
+                    <p class="program-description">Reggae music is known for its focus on themes of peace, love, and
+                        unity,
+                        as well as its critique of political and social issues.</p>
+                </div>
             </div>
-            <div class="program">
-                <i class="fa-solid fa-drum"></i>
-                <h3 class="program-title">Swahili Love</h3>
-                <p class="program-description">We will begin the event with a good presentation of swahili songs</p>
-            </div>
-            <div class="program">
-                <i class="fa-solid fa-guitar"></i>
-                <h3 class="program-title">Pop music</h3>
-                <p class="program-description">The term "pop music" is short for "popular music" and refers to music
-                    that is widely appealing and has mass commercial appeal.</p>
-            </div>
-            <div class="program">
-                <i class="fa-brands fa-soundcloud"></i>
-                <h3 class="program-title">Rap</h3>
-                <p class="program-description">Rap music is known for its dynamic rhythms, catchy hooks, and witty,
-                    insightful lyrics.</p>
-            </div>
-            <div class="program">
-                <i class="fa-solid fa-earth-africa"></i>
-                <h3 class="program-title">Afro music</h3>
-                <p class="program-description">Musical styles and genres that originate from the African continent, or
-                    are influenced by African musical traditions</p>
-            </div>
-            <div class="program">
-                <i class="fa-solid fa-cannabis"></i>
-                <h3 class="program-title">Reggae</h3>
-                <p class="program-description">Reggae music is known for its focus on themes of peace, love, and unity,
-                    as well as its critique of political and social issues.</p>
+            <div class="see-program">
+                <h2 class="see-program-h2">See the whole program</h2>
             </div>
         </div>
         <button class="join" type="button">Join Global Groove concert 2023</button>
     </section>
-    <!--<section id="ft-speakers">
-      <div class="ft-speakers">
-          <div class="ft-speakers-title">
-              <h2>Featured speakers</h2>
-              <hr>
-          </div>
-          <div class="speakers-container">
-            <div class="speaker">
-                <img src="" alt="">
-                <div class="about-speaker">
-                    <p>speaker name</p>
-                    <i>speaker job</i>
-                    <p>speaker extra details </p>
+    <section id="ft-speakers">
+        <div class="ft-speakers">
+            <div class="ft-speakers-title">
+                <h2>Featured Artists</h2>
+                <hr class="divider">
+            </div>
+            <div class="speakers-container">
+                <div class="speaker">
+                    <img src="./images/sauti sol.png" alt="sauti sol" width="30%">
+                    <div class="about-speaker">
+                        <p class="speaker-name">Sauti sol</p>
+                        <p class="profession">Kenyan band</p>
+                        <p class="more-info">Formed in Nairobi, Kenya, by vocalists Bien-Aimé Baraza, Willis Chimano and
+                            Savara Mudigi in 2005</p>
+                    </div>
                 </div>
-              </div>
-              <div class="speaker">
-                <img src="" alt="">
-                <div class="about-speaker">
-                    <p>speaker name</p>
-                    <i>speaker job</i>
-                    <p>speaker extra details </p>
+                <div class="speaker">
+                    <img src="./images/drake.png" alt="drake" width="30%">
+                    <div class="about-speaker">
+                        <p class="speaker-name">Drake</p>
+                        <p class="profession">Canadian rapper</p>
+                        <p class="more-info"> An influential figure in contemporary popular music, credited for further
+                            popularizing singing and R&B sensibilities in hip hop.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="speaker">
-                <img src="" alt="">
-                <div class="about-speaker">
-                    <p>speaker name</p>
-                    <i>speaker job</i>
-                    <p>speaker extra details </p>
+                <div class="speaker">
+                    <img src="./images/avicii.png" alt="avicii" width="30%">
+                    <div class="about-speaker">
+                        <p class="speaker-name">Avicii</p>
+                        <p class="profession">Swedish DJ</p>
+                        <p class="more-info">Remixer and music producer. At the age of 16, Bergling began posting his
+                            remixes on electronic device</p>
+                    </div>
                 </div>
-              </div>
-              <div class="speaker">
-                <img src="" alt="">
-                <div class="about-speaker">
-                    <p>speaker name</p>
-                    <i>speaker job</i>
-                    <p>speaker extra details </p>
+                <div class="speaker">
+                    <img src="./images/anne-marie.png" alt="ann-marie" width="30%">
+                    <div class="about-speaker">
+                        <p class="speaker-name">Anne-marie</p>
+                        <p class="profession">English singer</p>
+                        <p class="more-info">Anne-marie has attained charting singles on the UK Singles Chart, including
+                            Clean Bandit's "Rockabye" and "Ciao Adios"</p>
+                    </div>
                 </div>
-              </div>
-              <div class="speaker">
-                <img src="" alt="">
-                <div class="about-speaker">
-                    <p>speaker name</p>
-                    <i>speaker job</i>
-                    <p>speaker extra details </p>
+                <div class="speaker">
+                    <img src="./images/burnaboy.png" alt="burna-boy" width="30%">
+                    <div class="about-speaker">
+                        <p class="speaker-name">Burna Boy</p>
+                        <p class="profession">Nigerian singer, songwriter and producer</p>
+                        <p class="more-info"> He rose to stardom in 2012 after releasing "Like to Party", the lead
+                            single from his debut studio album, L.I.F.E</p>
+                    </div>
                 </div>
-              </div>
-              <div class="speaker">
-                <img src="" alt="">
-                <div class="about-speaker">
-                    <p>speaker name</p>
-                    <i>speaker job</i>
-                    <p>speaker extra details </p>
+                <div class="speaker">
+                    <img src="./images/bob marley.png" alt="sauti sol" width="30%">
+                    <div class="about-speaker">
+                        <p class="speaker-name">Bob Marley</p>
+                        <p class="profession"> Jamaican singer, musician, and songwriter</p>
+                        <p class="more-info">Considered one of the pioneers of reggae, his musical career was marked by
+                            fusing elements of reggae, ska and rocksteady</p>
+                    </div>
                 </div>
-              </div>
-          </div>
-      </div>
-   </section>-->
+            </div>
+        </div>
+    </section>
+    <section id="partners">
+        <div class="partners-container">
+            <div class="partners-title">
+                <h2>Partners</h2>
+                <hr class="divider">
+            </div>
+            <div class="partners">
+                <i class="fa-brands fa-spotify"><span class="brand-span">Sportify</span></i>
+                <i class="fa-brands fa-airbnb"><span class="brand-span">Airbnb</span></i>
+                <i class="fa-brands fa-soundcloud"><span class="brand-span">Sound cloud</span></i>
+                <i class="fa-brands fa-untappd"><span class="brand-span">Untappd</span></i>
+                <i class="fa-brands fa-studiovinari"><span class="brand-span">Studiovinari</span></i>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <img src="./images/GG logo.png" alt="Global groove logo" width="100px">
+        <div class="footer-details">
+            <p>2023 Global Groove concerts</p>
+            <p>&copy; All rights served</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
