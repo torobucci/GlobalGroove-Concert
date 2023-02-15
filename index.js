@@ -89,3 +89,30 @@ for (let i = 0; i < speakerData.length; i += 1) {
     aboutSpeaker.appendChild(aboutP);
   }
 }
+const showHideBtn = elementFromHtml('<button class="moreBtn" type="button">More <i class="fa-solid fa-angle-down"></i></button>');
+function showHide(mobile) {
+  speakersContainer.appendChild(showHideBtn);
+  if (mobile.matches) {
+    const speakerChildren = speakersContainer.children;
+    for (let i = 2; i < speakerChildren.length - 1; i += 1) {
+      speakerChildren[i].classList.add('none');
+    }
+  }
+  if (!mobile.matches) {
+    speakersContainer.removeChild(showHideBtn);
+    const speakerChildren = speakersContainer.children;
+    for (let i = 2; i < speakerChildren.length; i += 1) {
+      speakerChildren[i].classList.remove('none');
+    }
+  }
+}
+
+const mobile = window.matchMedia('(max-width:768px)');
+showHide(mobile);
+mobile.addListener(showHide);
+showHideBtn.addEventListener('click', () => {
+  const speakerChildren = speakersContainer.children;
+  for (let i = 2; i < speakerChildren.length - 1; i += 1) {
+    speakerChildren[i].classList.toggle('none');
+  }
+});

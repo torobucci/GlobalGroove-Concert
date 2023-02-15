@@ -419,3 +419,25 @@ footer {
   margin-bottom: 20px;
   border-bottom: 2px solid #4e5158;
 }
+
+.moreBtn {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fa-angle-down {
+  color: #df402e;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.none {
+  display: none;
+}
