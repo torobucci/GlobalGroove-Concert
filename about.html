@@ -18,15 +18,21 @@
             </div>
             <nav>
                 <ul class="top-nav">
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
                     <li><a href="#">English</a></li>
                     <li><a href="#">My page</a></li>
                     <li><a href="#">Log out</a></li>
                 </ul>
                 <div class="bottom-nav-container">
-                    <li id="logo"><a href="index.html"><img src="./images/GG logo.png" alt="Global Groove logo"
-                                width="70px"></a></li>
+                    <li id="logo">
+                        <a href="index.html"><img src="./images/GG logo.png" alt="Global Groove logo"
+                                width="70px" /></a>
+                    </li>
                     <ul class="bottom-nav">
                         <li><a href="about.html">About</a></li>
                         <li><a href="#">Program</a></li>
@@ -39,7 +45,7 @@
             <div class="menu-toggle">
                 <i class="fa-solid fa-x"></i>
                 <ul class="toggle-nav">
-                <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#main-program">Program</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#partners">sponsor</a></li>
@@ -53,14 +59,14 @@
                 <h1 class="intro-h1">Global groove concert 2023</h1>
                 <p class="description">
                     Global Groove Concerts provide a way for musicians and performers to
-                    connect with their audience and share their music and art. We provide
-                    oportunity for artists to showcase their talents and for fans to enjoy
-                    their favorite music live. This year we hope to expand our invitations
-                    to organization and well know individuals.
+                    connect with their audience and share their music and art. We
+                    provide oportunity for artists to showcase their talents and for
+                    fans to enjoy their favorite music live. This year we hope to expand
+                    our invitations to organization and well know individuals.
                 </p>
                 <p class="contact-us">
-                    If you would like to know more about Global Groove, please direct your
-                    message to the following email address:
+                    If you would like to know more about Global Groove, please direct
+                    your message to the following email address:
                     <strong>globalgroove2023@kenya.co.ke</strong> Our team will be happy
                     to assist you with any questions or concerns you may have.
                 </p>
@@ -86,9 +92,26 @@
                     Take a look at Global Groove concerts that took place in New York
                     and in Texas
                 </p>
-                <div class="past-images">
-                    <img src="./images/ny.jpg" alt="New York concert" width="60%" />
-                    <img src="./images/texas.jpg" alt="Texas concert" width="60%" />
+                <!--<div class="past-images-container">
+                    <img id="past-images" src="./images/ny.jpg" alt="New York concert" />
+                    <img id="past-images" src="./images/texas.jpg" alt="Texas concert" />
+                </div>-->
+                <div class="past-images-container">
+                    
+                    <div class="past-images">
+                        <img id="past-images" src="./images/ny.webp" alt="New York concert" />
+                        <div class="past-images-text ny">
+                            <h2>2021</h2>
+                            <p>Global Groove in NY</p>
+                        </div> 
+                    </div>
+                    <div class="past-images">
+                        <img id="past-images" src="./images/texas.webp" alt="New York concert" />
+                        <div class="past-images-text texas">
+                            <h2>2021</h2>
+                            <p>Global Groove in Texas</p>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,26 +120,35 @@
         <div class="partners-container">
             <div class="partners-title">
                 <h2>Partners</h2>
-                <hr class="divider">
+                <hr class="divider" />
             </div>
-            <div class="partners">
-                <i class="fa-brands fa-spotify"><span class="brand-span">Sportify</span></i>
-                <i class="fa-brands fa-airbnb"><span class="brand-span">Airbnb</span></i>
-                <i class="fa-brands fa-soundcloud"><span class="brand-span">Sound cloud</span></i>
-                <i class="fa-brands fa-untappd"><span class="brand-span">Untappd</span></i>
-                <i class="fa-brands fa-studiovinari"><span class="brand-span">Studiovinari</span></i>
-
-            </div>
+            <ul class="partners">
+                <li>
+                    <i class="fa-brands fa-spotify"><span class="brand-span">Sportify</span></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-airbnb"><span class="brand-span">Airbnb</span></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-soundcloud"><span class="brand-span">Sound cloud</span></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-untappd"><span class="brand-span">Untappd</span></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-studiovinari"><span class="brand-span">Studiovinari</span></i>
+                </li>
+            </ul>
         </div>
     </section>
     <footer id="footer">
-        <img src="./images/GG logo.png" alt="Global groove logo" width="100px">
+        <img src="./images/GG logo.png" alt="Global groove logo" width="100px" />
         <div class="footer-details">
             <p>2023 Global Groove concerts</p>
             <p>&copy; All rights served</p>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="about.js"></script>
 </body>
 
 </html>

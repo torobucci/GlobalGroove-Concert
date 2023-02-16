@@ -183,6 +183,12 @@ a:active {
   font-size: 22px;
 }
 
+.past-images-container {
+  display: inherit;
+  flex-direction: column;
+  row-gap: inherit;
+}
+
 #partners {
   background-color: #272a31;
 }
@@ -226,59 +232,6 @@ footer {
   padding: 10px 30px 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .bars-container {
-    display: none;
-  }
-
-  .top-nav,
-  .bottom-nav,
-  .bottom-nav-container {
-    display: flex;
-  }
-
-  .intro-content,
-  .logo-container {
-    margin: 5% auto 0;
-    max-width: 60%;
-  }
-
-  .intro-p {
-    display: none;
-  }
-
-  .past-images {
-    display: flex;
-    column-gap: 30px;
-  }
-
-  #partners {
-    display: none;
-  }
-
-  footer {
-    background-color: #272a31;
-    color: #d3d3d3;
-    padding: 30px 0;
-  }
-
-  footer img {
-    border-radius: 50%;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  .program-title {
-    font-size: 18px;
-  }
-
-  .program-description {
-    font-size: 13px;
-  }
-}
-
 .menu-toggle {
   position: absolute;
   top: 0;
@@ -316,4 +269,97 @@ footer {
   padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 2px solid #4e5158;
+}
+
+.past-images {
+  position: relative;
+}
+
+.past-images-text {
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  font-size: 5vw;
+  color: #fff;
+  background-color: rgba(255, 68, 0, 0.438);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#past-images {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.ny {
+  height: 99%;
+}
+
+.texas {
+  height: 98.5%;
+}
+
+@media screen and (min-width: 768px) {
+  .bars-container {
+    display: none;
+  }
+
+  .top-nav,
+  .bottom-nav,
+  .bottom-nav-container {
+    display: flex;
+  }
+
+  .intro-content,
+  .logo-container {
+    margin: 5% auto 0;
+    max-width: 60%;
+  }
+
+  .intro-p {
+    display: none;
+  }
+
+  .past-images-container {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  #partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+    color: #d3d3d3;
+    padding: 30px 0;
+  }
+
+  footer img {
+    border-radius: 50%;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .program-title {
+    font-size: 18px;
+  }
+
+  .program-description {
+    font-size: 13px;
+  }
+
+  .past-images-text {
+    font-size: 1.5vw;
+  }
+
+  .texas,
+  .ny {
+    height: 100%;
+  }
 }
