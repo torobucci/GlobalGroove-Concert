@@ -89,7 +89,8 @@ for (let i = 0; i < speakerData.length; i += 1) {
     aboutSpeaker.appendChild(aboutP);
   }
 }
-const showHideBtn = elementFromHtml('<button class="moreBtn" type="button">More <i class="fa-solid fa-angle-down"></i></button>');
+const showHideBtn = elementFromHtml('<button class="moreBtn" type="button">More<i class="fa-solid fa-angle-down"></i></button>');
+
 function showHide(mobile) {
   speakersContainer.appendChild(showHideBtn);
   if (mobile.matches) {
@@ -114,5 +115,16 @@ showHideBtn.addEventListener('click', () => {
   const speakerChildren = speakersContainer.children;
   for (let i = 2; i < speakerChildren.length - 1; i += 1) {
     speakerChildren[i].classList.toggle('none');
+  }
+  if (showHideBtn.textContent === 'More') {
+    showHideBtn.textContent = 'Less';
+    const upChevron = document.createElement('i');
+    upChevron.className = 'fa-solid fa-angle-up';
+    showHideBtn.appendChild(upChevron);
+  } else {
+    showHideBtn.textContent = 'More';
+    const downChevron = document.createElement('i');
+    downChevron.className = 'fa-solid fa-angle-down';
+    showHideBtn.appendChild(downChevron);
   }
 });
