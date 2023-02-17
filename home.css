@@ -432,7 +432,8 @@ footer {
   border-radius: 5px;
 }
 
-.fa-angle-down {
+.fa-angle-down,
+.fa-angle-up {
   color: #df402e;
   margin-left: 10px;
   vertical-align: middle;
